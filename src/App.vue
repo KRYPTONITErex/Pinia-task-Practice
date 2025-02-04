@@ -4,8 +4,8 @@
 
         <!-- heading -->
         <header>
-            <img src="./assets/pinia-logo.svg" alt="pinia logo">
-            <h1>Pinia Tasks</h1>
+            <img src="./assets/RM.webp" alt="pinia logo">
+            <h1>JSE ROAD MAP</h1>
         </header>
 
         <!-- new task form -->
@@ -16,7 +16,8 @@
         <!-- filter -->
          <nav class="filter">
             <button @click="filter = 'all'">All Tasks</button>
-            <button @click="filter = 'favs'">Fav Tasks</button>
+            <button @click="filter = 'favs'">Completed Tasks</button>
+            <button @click="filter = 'UNfavs'">UN-Completed Tasks</button>
          </nav>
 
          <!-- loading -->
@@ -24,14 +25,20 @@
 
         <!-- task list -->
          <div class="task-list" v-if="filter === 'all'">
-            <p>You have {{ totalCount }} tasks left to do</p>
+            <p>You have {{ totalCount }} all tasks</p>
             <div v-for="task in tasks" :key="task.id">
                 <TaskDetails :task="task"></TaskDetails>
             </div>
          </div>
          <div class="task-list" v-if="filter === 'favs'">
-            <p>You have {{ favCount }} favs left to do</p>
+            <p>You have {{ favCount }} completed tasks</p>
             <div v-for="task in favs" :key="task.id">
+                <TaskDetails :task="task"></TaskDetails>
+            </div>
+         </div>
+         <div class="task-list" v-if="filter === 'UNfavs'">
+            <p>You have {{ UNfavCount }} un-completed tasks</p>
+            <div v-for="task in UNfavs" :key="task.id">
                 <TaskDetails :task="task"></TaskDetails>
             </div>
          </div>
@@ -54,7 +61,7 @@ import { storeToRefs } from 'pinia';
     setup() {  
         const taskStore = useTaskStore();
 
-        const { tasks, loading, favs, totalCount, favCount } = storeToRefs(taskStore)
+        const { tasks, loading, favs, totalCount, favCount, UNfavCount, UNfavs } = storeToRefs(taskStore)
 
         //fetch tasks
         taskStore.getTasks()
@@ -62,7 +69,7 @@ import { storeToRefs } from 'pinia';
         const filter = ref ('all');
 
 
-        return { taskStore , filter , tasks, loading, favs, totalCount, favCount  }
+        return { taskStore , filter , tasks, loading, favs, totalCount, favCount, UNfavs, UNfavCount }
     }
 }
 </script>

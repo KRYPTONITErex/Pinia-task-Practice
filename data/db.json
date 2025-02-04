@@ -1,13 +1,103 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "title": "play gloomhaven",
+      "id": "6024",
+      "title": "JavaScript & ES6+ Basics",
       "isFav": true
     },
     {
-      "id": "4",
-      "title": "eat some pineapplers",
+      "id": "1787",
+      "title": "Vue.js Composition API",
+      "isFav": true
+    },
+    {
+      "id": "4724",
+      "title": "Vue Router & API Calls",
+      "isFav": true
+    },
+    {
+      "id": "2637",
+      "title": "Pinia State Management",
+      "isFav": true
+    },
+    {
+      "id": "3294",
+      "title": "Component Lifecycle & Best Practices",
+      "isFav": true
+    },
+    {
+      "id": "1178",
+      "title": "Mini Project: Task Manager App",
+      "isFav": true
+    },
+    {
+      "id": "7368",
+      "title": "Java SE Refresh",
+      "isFav": true
+    },
+    {
+      "id": "5688",
+      "title": "Spring Boot Basics",
+      "isFav": false
+    },
+    {
+      "id": "6524",
+      "title": "JPA & Hibernate",
+      "isFav": false
+    },
+    {
+      "id": "1503",
+      "title": "Authentication & Security",
+      "isFav": false
+    },
+    {
+      "id": "5240",
+      "title": "Microservices & Cloud",
+      "isFav": false
+    },
+    {
+      "id": "3408",
+      "title": "Project: User Management System",
+      "isFav": false
+    },
+    {
+      "id": "2355",
+      "title": "SQL vs NoSQL Basics",
+      "isFav": false
+    },
+    {
+      "id": "9359",
+      "title": "AWS DynamoDB Basics",
+      "isFav": false
+    },
+    {
+      "id": "2017",
+      "title": "DynamoDB Advanced Concepts",
+      "isFav": false
+    },
+    {
+      "id": "1635",
+      "title": "Spring Boot + DynamoDB Integration",
+      "isFav": false
+    },
+    {
+      "id": "9750",
+      "title": "Docker & KuberneSpring Boot + DynamoDB Integrationtes Basics",
+      "isFav": false
+    },
+    {
+      "id": "7044",
+      "title": "CI/CD Pipelines",
+      "isFav": false
+    },
+    {
+      "id": "6051",
+      "title": "AWS Deployment",
+      "isFav": false
+    },
+    {
+      "id": "2119",
+      "title": "Final Project: Full-Stack App Deployment",
       "isFav": false
     }
   ]
